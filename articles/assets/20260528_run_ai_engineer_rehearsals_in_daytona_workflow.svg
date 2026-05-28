@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="520" viewBox="0 0 1200 520" role="img" aria-labelledby="title desc">
+  <title id="title">AI engineer rehearsal workflow in Daytona</title>
+  <desc id="desc">A Daytona workspace prepares Omni Engineer and Claude Engineer for repeatable prompt-to-patch rehearsals.</desc>
+  <rect width="1200" height="520" fill="#f7f9fc"/>
+  <rect x="70" y="70" width="1060" height="380" rx="22" fill="#ffffff" stroke="#d7dfec" stroke-width="3"/>
+  <text x="120" y="126" font-family="Arial, sans-serif" font-size="34" font-weight="700" fill="#182033">Daytona workspace</text>
+  <text x="120" y="166" font-family="Arial, sans-serif" font-size="18" fill="#516078">One reproducible environment for setup, prompting, patch review, and validation.</text>
+  <rect x="120" y="225" width="230" height="120" rx="16" fill="#e9f5ff" stroke="#93c5fd" stroke-width="2"/>
+  <text x="155" y="276" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#0f3a5f">Repo branch</text>
+  <text x="155" y="310" font-family="Arial, sans-serif" font-size="16" fill="#31526d">devcontainer config</text>
+  <path d="M370 285 L455 285" stroke="#8291a8" stroke-width="4" stroke-linecap="round"/>
+  <path d="M455 285 L437 273 M455 285 L437 297" stroke="#8291a8" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="480" y="205" width="240" height="160" rx="16" fill="#f1f8ee" stroke="#86c77a" stroke-width="2"/>
+  <text x="528" y="254" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#23532a">AI engineer</text>
+  <text x="525" y="291" font-family="Arial, sans-serif" font-size="16" fill="#3f6845">Omni Engineer</text>
+  <text x="525" y="322" font-family="Arial, sans-serif" font-size="16" fill="#3f6845">Claude Engineer</text>
+  <path d="M740 285 L825 285" stroke="#8291a8" stroke-width="4" stroke-linecap="round"/>
+  <path d="M825 285 L807 273 M825 285 L807 297" stroke="#8291a8" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="850" y="225" width="230" height="120" rx="16" fill="#fff4e5" stroke="#f0b45c" stroke-width="2"/>
+  <text x="900" y="276" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#6a3f00">Patch diff</text>
+  <text x="900" y="310" font-family="Arial, sans-serif" font-size="16" fill="#765123">review and test</text>
+  <rect x="164" y="390" width="870" height="34" rx="17" fill="#edf2f7"/>
+  <text x="208" y="413" font-family="Arial, sans-serif" font-size="15" fill="#536174">Repeat the same prompt with the same dependencies before trusting the result.</text>
+</svg>
