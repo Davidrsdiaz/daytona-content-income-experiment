@@ -1,29 +1,29 @@
 <svg width="1280" height="720" viewBox="0 0 1280 720" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
-  <title id="title">OpenRouter transcription workflow</title>
-  <desc id="desc">A workflow diagram showing a Daytona workspace running Sapat, sending audio to OpenRouter, and writing a transcript file.</desc>
+  <title id="title">Sapat multi-provider transcription workflow</title>
+  <desc id="desc">A workflow diagram showing a Daytona workspace running Sapat, selecting a configured provider, and writing a transcript file.</desc>
   <rect width="1280" height="720" fill="#f7f8fb"/>
   <rect x="72" y="92" width="1136" height="536" rx="18" fill="#ffffff" stroke="#d8dee9" stroke-width="2"/>
-  <text x="112" y="150" fill="#111827" font-family="Inter, Arial, sans-serif" font-size="34" font-weight="700">OpenRouter transcription with Sapat in Daytona</text>
-  <text x="112" y="188" fill="#526071" font-family="Inter, Arial, sans-serif" font-size="18">A repeatable workspace flow for turning project recordings into text.</text>
+  <text x="112" y="150" fill="#111827" font-family="Inter, Arial, sans-serif" font-size="34" font-weight="700">Multi-provider transcription with Sapat in Daytona</text>
+  <text x="112" y="188" fill="#526071" font-family="Inter, Arial, sans-serif" font-size="18">A repeatable workspace flow for turning project recordings into reviewed text.</text>
 
   <rect x="112" y="258" width="220" height="148" rx="14" fill="#e8f2ff" stroke="#7aa7e8" stroke-width="2"/>
   <text x="140" y="308" fill="#12385f" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="700">Daytona</text>
   <text x="140" y="342" fill="#254763" font-family="Inter, Arial, sans-serif" font-size="17">Workspace</text>
-  <text x="140" y="372" fill="#254763" font-family="Inter, Arial, sans-serif" font-size="17">with Sapat branch</text>
+  <text x="140" y="372" fill="#254763" font-family="Inter, Arial, sans-serif" font-size="17">repo + .env</text>
 
   <rect x="410" y="258" width="220" height="148" rx="14" fill="#ecfdf3" stroke="#63b981" stroke-width="2"/>
   <text x="438" y="308" fill="#0f4b2d" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="700">Sapat</text>
-  <text x="438" y="342" fill="#1d5c39" font-family="Inter, Arial, sans-serif" font-size="17">ffmpeg to MP3</text>
-  <text x="438" y="372" fill="#1d5c39" font-family="Inter, Arial, sans-serif" font-size="17">base64 JSON request</text>
+  <text x="438" y="342" fill="#1d5c39" font-family="Inter, Arial, sans-serif" font-size="17">ffmpeg convert</text>
+  <text x="438" y="372" fill="#1d5c39" font-family="Inter, Arial, sans-serif" font-size="17">provider registry</text>
 
   <rect x="708" y="258" width="220" height="148" rx="14" fill="#fff7e6" stroke="#e5a93c" stroke-width="2"/>
-  <text x="736" y="308" fill="#6a4300" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="700">OpenRouter</text>
-  <text x="736" y="342" fill="#72520f" font-family="Inter, Arial, sans-serif" font-size="17">STT model</text>
-  <text x="736" y="372" fill="#72520f" font-family="Inter, Arial, sans-serif" font-size="17">returns text + usage</text>
+  <text x="736" y="308" fill="#6a4300" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="700">Provider</text>
+  <text x="736" y="342" fill="#72520f" font-family="Inter, Arial, sans-serif" font-size="17">ElevenLabs / Groq</text>
+  <text x="736" y="372" fill="#72520f" font-family="Inter, Arial, sans-serif" font-size="17">or local model</text>
 
   <rect x="1006" y="258" width="140" height="148" rx="14" fill="#f3ecff" stroke="#a78bfa" stroke-width="2"/>
   <text x="1034" y="308" fill="#4c1d95" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="700">.txt</text>
-  <text x="1034" y="342" fill="#5b2bb0" font-family="Inter, Arial, sans-serif" font-size="17">reviewable</text>
+  <text x="1034" y="342" fill="#5b2bb0" font-family="Inter, Arial, sans-serif" font-size="17">reviewed</text>
   <text x="1034" y="372" fill="#5b2bb0" font-family="Inter, Arial, sans-serif" font-size="17">transcript</text>
 
   <path d="M346 332H394" stroke="#637083" stroke-width="4" stroke-linecap="round"/>
@@ -35,5 +35,5 @@
 
   <rect x="112" y="478" width="1034" height="70" rx="12" fill="#f9fafb" stroke="#e5e7eb"/>
   <text x="140" y="522" fill="#334155" font-family="Inter, Arial, sans-serif" font-size="19">Command:</text>
-  <text x="236" y="522" fill="#111827" font-family="Menlo, Consolas, monospace" font-size="18">sapat media/team-demo.mp4 --api openrouter --language en --quality M</text>
+  <text x="236" y="522" fill="#111827" font-family="Menlo, Consolas, monospace" font-size="18">sapat media/team-demo.mp4 --provider elevenlabs --model scribe_v2</text>
 </svg>
